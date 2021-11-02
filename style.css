@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url("./images/rolls.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 27%;
+}
+
+header .content h1 {
+  font-family: Raleway, montserrat, sans-serif;
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 150;
+  padding-bottom: 3px;
+}
+
+@media screen and (min-width: 480px) {
+  header .content h1 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .content h1 {
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .content h1 {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header .content h1 {
+    font-size: 128px;
+  }
+}
+
+header .content h2 {
+  font-family: Quattrocento, montserrat, sans-serif;
+  color: rgb(255, 16, 175);
+  font-size: 28px;
+  font-weight: 900;
+  padding-top: 3px;
+  font-style: italic;
+}
+
+@media screen and (min-width: 480px) {
+  header .content h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .content h2 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .content h2 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header .content h2 {
+    font-size: 72px;
+  }
+}
+
+.fab {
+  font-size: 1.75em;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}
+
+.fab:hover {
+  color: rgb(119, 119, 119);
+}
